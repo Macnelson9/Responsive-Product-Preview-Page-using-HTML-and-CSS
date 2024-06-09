@@ -38,6 +38,7 @@ img.productImage {
   height: 500px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  cursor: default;
 }
 
 .content {
@@ -46,6 +47,7 @@ img.productImage {
   background: var(--white-color);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  cursor: default;
 }
 
 h4,
@@ -115,9 +117,14 @@ button {
   padding: 17px 65px;
   margin-top: 10px;
   margin-left: 30px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 596px) {
+button:hover {
+  background: #144128;
+}
+
+@media all and (max-width: 596px) {
   main {
     margin-top: 25px;
   }
@@ -129,6 +136,7 @@ button {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px;
+    cursor: default;
   }
 
   .content {
@@ -138,6 +146,7 @@ button {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    cursor: default;
   }
 
   h4,
@@ -180,10 +189,15 @@ button {
     font-size: 1rem;
     padding: 17px 115px;
     margin-top: 30px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #144128;
   }
 }
 
-@media screen and (max-width: 447px) {
+@media all and (max-width: 447px) {
   img.productImage {
     width: 390px;
     height: 300px;
@@ -199,7 +213,7 @@ button {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media all and (max-width: 370px) {
   main {
     margin-top: 30px;
   }
